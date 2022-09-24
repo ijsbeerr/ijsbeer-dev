@@ -1,0 +1,93 @@
+@import url("/css/fonts/stylesheet.css");
+
+:root {
+    color-scheme: dark;
+}
+
+body {
+    background-color: #1e1e1e;
+    font-family: 'Hellix', sans-serif;
+    color: white;
+}
+
+.vs {
+    min-height: 51%;
+    min-height: 51vh;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.vs2 {
+    min-height: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.navbar {
+    background-color: #191919;
+}
+
+#home {
+    background-color: #191919;
+    opacity: 1;
+    background-image: linear-gradient(30deg, #1c1c1c 12%, transparent 12.5%, transparent 87%, #1c1c1c 87.5%, #1c1c1c),
+        linear-gradient(150deg, #1c1c1c 12%, transparent 12.5%, transparent 87%, #1c1c1c 87.5%, #1c1c1c),
+        linear-gradient(30deg, #1c1c1c 12%, transparent 12.5%, transparent 87%, #1c1c1c 87.5%, #1c1c1c),
+        linear-gradient(150deg, #1c1c1c 12%, transparent 12.5%, transparent 87%, #1c1c1c 87.5%, #1c1c1c),
+        linear-gradient(60deg, #1c1c1c77 25%, transparent 25.5%, transparent 75%, #1c1c1c77 75%, #1c1c1c77),
+        linear-gradient(60deg, #1c1c1c77 25%, transparent 25.5%, transparent 75%, #1c1c1c77 75%, #1c1c1c77);
+    background-size: 58px 102px;
+    background-position: 0 0,
+        0 0,
+        29px 51px,
+        29px 51px,
+        0 0,
+        29px 51px;
+}
+
+#stats {
+    background-color: #242424;
+}
+
+#works {
+    background-color: #1f1e1e;
+}
+
+img {
+    transition: 0.15s ease-in-out;
+}
+
+img:hover {
+    transition: 0.15s ease-in-out;
+    transform: scale(1.05);
+    cursor: pointer;
+}

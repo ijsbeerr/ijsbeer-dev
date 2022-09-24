@@ -1,0 +1,93 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="ijsbeer">
+	<main>
+        <section id="home">
+            <div class="container p-5 animate__animated animate__fadeInDown animate__fast">
+                <div class="row vs mt-5 mb-5">
+                    <div class="col-md-5 p-4">
+                        <span>Hi! I'm</span>
+                        <h1 class="fw-bold">ijsbeer</h1>
+                        <h1 class="fw-bold">Web Developer</h1>
+                        <p>What's up? I'm ijsbeer, a frontend developer. I enjoy creating websites and put alot of time
+                            into my projects. I'm very passionate about my work - check it below.</p>
+                        <div class="btn-group">
+                            <a class="btn btn-primary" href="#works">My Work</a>
+                            <a class="btn btn-outline-secondary" href="/contact">Hire Me</a>
+                        </div>
+                    </div>
+                    <div class="col-md-7 p-4 text-end">
+						<button type="button" class="bg-transparent border-0 p-3" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Hello! 👋">
+							<img src="/img/logo.jpg" class="logo img-fluid rounded-5 js-tilt" width="400" height="400"
+														alt="Artwork" data-tilt data-tilt-max="15">
+						</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="stats">
+            <div class="container p-5">
+                <div class="row text-center">				
+                    <div class="col-lg-3 col-md-6 animate__animated animate__fadeInUp animate__delay-1s animate__fast">
+                        <h2 class="fw-bold count1">5+</h2>
+                        <h4>Years Experience</h4>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 animate__animated animate__fadeInDown animate__delay-1s animate__fast">
+                        <h2 class="fw-bold count2">20+</h2>
+                        <h4>Projects Made</h4>
+                    </div>
+
+					<div class="col-lg-3 col-md-6 animate__animated animate__fadeInUp animate__delay-1s animate__fast">
+                        <h2 class="fw-bold count2">15+</h2>
+                        <h4>Websites Created</h4>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 animate__animated animate__fadeInDown animate__delay-1s animate__fast">
+                        <h2 class="fw-bold count3">10+</h2>
+                        <h4>Happy Clients</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+		<!-- -->
+		<section id="works" class="animate__animated animate__fadeIn animate__delay-2s animate__fast">
+			<div class="container p-5 text-center splide rounded-5">
+				<h1 class="fw-bold">Works</h1>
+				<p class="lead visually-hidden">Click on the images to enlarge them.</p>
+					<div class="splide__track">
+						<ul class="splide__list">
+						<li class="splide__slide">
+							<img src="/img/works/boss.jpg" alt="Boss Studio" class="img-fluid p-3 rounded-5">
+						</li>
+						<li class="splide__slide">
+							<img src="/img/works/wawa.jpg" alt="PcHulp" class="img-fluid p-3 rounded-5">
+						</li>
+						<li class="splide__slide">
+							<img src="/img/works/pchulp.jpg" alt="PcHulp" class="img-fluid p-3 rounded-5">
+						</li>
+						<li class="splide__slide">
+							<img src="/img/works/cytrix.jpg" alt="PcHulp" class="img-fluid p-3 rounded-5">
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+    </main>
+
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.2/dist/js/splide.min.js" is:inline></script>
+	<script>
+		import { Splide } from "@splidejs/splide";
+
+		document.addEventListener( 'DOMContentLoaded', function() {
+			var splide = new Splide( '.splide', {
+			type   : 'loop',
+			padding: '5rem',
+			} );
+
+			splide.mount();
+		} );
+	</script>
+</Layout>
