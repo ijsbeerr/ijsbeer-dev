@@ -10,6 +10,10 @@ body {
     color: white;
 }
 
+p {
+    color: #dddddd;
+}
+
 .vs {
     min-height: 51%;
     min-height: 51vh;
@@ -82,11 +86,15 @@ body {
     background-color: #1f1e1e;
 }
 
-img {
+#testimonials {
+    background-color: #181717;
+}
+
+.logo {
     transition: 0.15s ease-in-out;
 }
 
-img:hover {
+.logo:hover {
     transition: 0.15s ease-in-out;
     transform: scale(1.05);
     cursor: pointer;

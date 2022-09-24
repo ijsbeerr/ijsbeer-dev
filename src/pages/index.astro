@@ -27,7 +27,7 @@ import Layout from '../layouts/Layout.astro';
                 </div>
             </div>
         </section>
-        <section id="stats">
+        <section id="stats" class="animate__animated animate__fadeIn">
             <div class="container p-5">
                 <div class="row text-center">				
                     <div class="col-lg-3 col-md-6 animate__animated animate__fadeInUp animate__delay-1s">
@@ -52,26 +52,57 @@ import Layout from '../layouts/Layout.astro';
                 </div>
             </div>
         </section>
-		<!-- -->
+
 		<section id="works" class="animate__animated animate__fadeIn animate__delay-2s">
-			<div class="container p-5 text-center splide rounded-5">
+			<div class="container p-5 text-center splide rounded-5 mb-5">
 				<h1 class="fw-bold">Works</h1>
-				<p class="lead visually-hidden">Click on the images to enlarge them.</p>
+				<p class="lead">Click on the image to view the full website.</p>
 					<div class="splide__track">
 						<ul class="splide__list">
 						<li class="splide__slide">
-							<img src="/img/works/boss.jpg" alt="Boss Studio" class="img-fluid p-3 rounded-5">
+							<a href="http://boss-studio.org" target="_blank">
+								<img src="/img/works/boss.jpg" alt="Boss Studio" class="img-fluid rounded-5 p-3">
+							</a>
 						</li>
 						<li class="splide__slide">
-							<img src="/img/works/wawa.jpg" alt="PcHulp" class="img-fluid p-3 rounded-5">
+							<a href="http://pchulphengelo.netlify.app" target="_blank">
+								<img src="/img/works/pchulp.jpg" alt="PcHulp" class="img-fluid rounded-5 p-3">
+							</a>
 						</li>
 						<li class="splide__slide">
-							<img src="/img/works/pchulp.jpg" alt="PcHulp" class="img-fluid p-3 rounded-5">
+							<a href="http://cytrix.wtf" target="_blank">
+								<img src="/img/works/cytrix.jpg" alt="PcHulp" class="img-fluid rounded-5 p-3">
+							</a>
 						</li>
 						<li class="splide__slide">
-							<img src="/img/works/cytrix.jpg" alt="PcHulp" class="img-fluid p-3 rounded-5">
+							<a href="http://wawa.lol" target="_blank">
+								<img src="/img/works/wawa.jpg" alt="PcHulp" class="img-fluid rounded-5 p-3">
+							</a>
 						</li>
 					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section id="testimonials" class="animate__animated animate__fadeIn animate__delay-3s">
+			<div class="container p-5">
+				<div class="row">
+					<h1 class="fw-bold text-center">Testimonials</h1>
+					<p class="lead text-center">See what my clients think about me!</p>
+					<div class="col-lg-4 col-md-1 p-3 rounded-5">
+						<p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, aspernatur dignissimos? Nisi nulla alias voluptas reiciendis cupiditate aliquid dolorem rem soluta, ipsa, numquam minus deserunt, officia voluptatem itaque quod exercitationem.”</p>
+						<p class="fw-bold">-Xury</p>
+					</div>
+					
+					<div class="col-lg-4 col-md-6 p-3 rounded-5">
+						<p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vitae quam consequuntur explicabo, eum fuga, voluptatem reprehenderit quaerat iste alias nostrum. Magnam, debitis inventore qui sit eius ipsa laborum nisi?”</p>
+						<p class="fw-bold">-Xury</p>
+					</div>
+					
+					<div class="col-lg-4 col-md-6 p-3 rounded-5">
+						<p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit reiciendis neque earum temporibus deserunt laborum reprehenderit in blanditiis rem, quibusdam perspiciatis velit soluta. Ipsum a delectus incidunt nesciunt et natus!”</p>
+						<p class="fw-bold">-Xury</p>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -83,11 +114,11 @@ import Layout from '../layouts/Layout.astro';
 
 		document.addEventListener( 'DOMContentLoaded', function() {
 			var splide = new Splide( '.splide', {
-			type   : 'loop',
-			padding: '5rem',
+			type   : 'fade'
 			} );
 
 			splide.mount();
 		} );
+		
 	</script>
 </Layout>
