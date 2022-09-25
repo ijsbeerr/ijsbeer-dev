@@ -36,8 +36,8 @@ p {
 }
 
 .vs2 {
-    min-height: 100%;
-    min-height: 100vh;
+    min-height: 200%;
+    min-height: 20vh;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -90,6 +90,10 @@ p {
     background-color: #181717;
 }
 
+#contact {
+    background-color: #111010;
+}
+
 .logo {
     transition: 0.15s ease-in-out;
 }
@@ -98,4 +102,8 @@ p {
     transition: 0.15s ease-in-out;
     transform: scale(1.05);
     cursor: pointer;
+}
+
+.footer {
+    background-color: #141313;
 }
