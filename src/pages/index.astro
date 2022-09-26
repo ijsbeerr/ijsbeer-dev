@@ -53,21 +53,18 @@ import Layout from "../layouts/Layout.astro";
             <h2 class="fw-bold count1">5+</h2>
             <h4>Years Experience</h4>
           </div>
-
           <div
             class="col-lg-3 col-md-6 animate__animated animate__fadeInDown animate__delay-1s"
           >
             <h2 class="fw-bold count2">20+</h2>
             <h4>Projects Made</h4>
           </div>
-
           <div
-            class="col-lg-3 col-md-6 animate__animated animate__fadeInUp animate__delay-1s"
+            class="col-lg-3 1 col-md-6 animate__animated animate__fadeInUp animate__delay-1s"
           >
             <h2 class="fw-bold count2">15+</h2>
             <h4>Websites Created</h4>
           </div>
-
           <div
             class="col-lg-3 col-md-6 animate__animated animate__fadeInDown animate__delay-1s"
           >
@@ -77,12 +74,11 @@ import Layout from "../layouts/Layout.astro";
         </div>
       </div>
     </section>
-
     <section
       id="works"
       class="animate__animated animate__fadeIn animate__delay-2s"
     >
-      <div class="container p-5 text-center splide rounded-5 mb-5">
+      <div class="container p-5 text-center splide">
         <h1 class="fw-bold">Works</h1>
         <p class="lead">Click on the image to view the full website.</p>
         <div class="splide__track">
@@ -127,7 +123,6 @@ import Layout from "../layouts/Layout.astro";
         </div>
       </div>
     </section>
-
     <section
       id="testimonials"
       class="animate__animated animate__fadeIn animate__delay-3s"
@@ -142,9 +137,8 @@ import Layout from "../layouts/Layout.astro";
               have been working with him for years now, his work never
               disappoints and he's a really professional guy.”
             </p>
-            <p class="fw-bold">-Kudasai</p>
+            <p class="fw-bold person">-Kudasai</p>
           </div>
-
           <div class="col-lg-4 col-md-6 p-3 d-flex flex-column">
             <p>
               “I contacted ijsbeer for my project, he was happy to start and has
@@ -152,9 +146,8 @@ import Layout from "../layouts/Layout.astro";
               I asked for and was very quick to apply changes. For a fast and
               reliable worker, this is your guy!”
             </p>
-            <p class="fw-bold">-Xury</p>
+            <p class="fw-bold person">-Xury</p>
           </div>
-
           <div class="col-lg-4 col-md-6 p-3 d-flex flex-column">
             <p>
               “Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
@@ -162,7 +155,7 @@ import Layout from "../layouts/Layout.astro";
               in blanditiis rem, quibusdam perspiciatis velit soluta. Ipsum a
               delectus incidunt nesciunt et natus!”
             </p>
-            <p class="fw-bold">-Person</p>
+            <p class="fw-bold person">-Person</p>
           </div>
         </div>
       </div>
@@ -176,14 +169,23 @@ import Layout from "../layouts/Layout.astro";
           <div class="col-md-8">
             <h1 class="fw-bold">Let's get in touch</h1>
             <p class="lead">Need a static website? I'm your guy.</p>
-            <a class="btn btn-warning btn-lg mb-3"
-              ><i class="bi bi-discord me-2"></i>ijsbeer#0001</a
+            <a
+              class="btn btn-warning btn-lg mb-3"
+              data-clipboard-text="ijsbeer#0001"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="top"
+              data-bs-content="Copied!"
             >
+              <i class="bi bi-discord me-2"></i>ijsbeer#0001
+            </a>
             <a
               class="btn btn-danger btn-lg mb-3"
               href="http://twitter.com/ijsbeer_dev"
-              target="_blank"><i class="bi bi-twitter me-2"></i>ijsbeer_dev</a
+              target="_blank"
             >
+              <i class="bi bi-twitter me-2"></i>ijsbeer_dev
+            </a>
           </div>
           <div class="col-md-4">
             <img
@@ -197,19 +199,19 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </section>
   </main>
-
   <script src="/js/splide.js" is:inline></script>
+  <script src="/js/autoscroll.js" is:inline></script>
   <script src="/js/clipboard.js" is:inline></script>
   <script>
-    import { Splide } from "@splidejs/splide";
+    import Splide from "@splidejs/splide";
 
-    document.addEventListener("DOMContentLoaded", function () {
-      var splide = new Splide(".splide", {
-        type: "fade",
-      });
-
-      splide.mount();
+    const splide = new Splide(".splide", {
+      type: "loop",
+      snap: true,
+      perPage: 1,
     });
+
+    splide.mount();
   </script>
   <script>
     import ClipboardJS from "clipboard";
