@@ -1,8 +1,10 @@
 # Welcome to [ijsbeer.dev](https://ijsbeer.dev)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/963b3ec1-455d-4012-b198-78ad560cd7cc/deploy-status)](https://app.netlify.com/sites/ijsbeer-dev/deploys)
+
 👋 My portfolio website, feel free to contribute or take the source code for yourself!
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+![preview](https://github.com/ijsbeerr/ijsbeer-dev/blob/main/public/img/preview.jpg?raw=true)
 
 
 # Credits 👀
