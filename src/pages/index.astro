@@ -200,17 +200,6 @@ import Layout from "../layouts/Layout.astro";
   <script src="/js/splide.js" is:inline></script>
   <script src="/js/count.js" is:inline></script>
   <script src="/js/clipboard.js" is:inline></script>
-  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.0/bundled/lenis.js"></script>
-  <script>
-    const lenis = new Lenis({})
-
-    function raf(time) {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
-    }
-
-    requestAnimationFrame(raf)
-  </script>
 
   <script>
     import Splide from "@splidejs/splide";
