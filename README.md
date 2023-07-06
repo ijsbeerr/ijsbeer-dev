@@ -1,4 +1,4 @@
-# Welcome to [ijsbeer.dev](https://ijsbeer.dev)
+#Welcome to [ijsbeer.dev](https://ijsbeer.dev)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/963b3ec1-455d-4012-b198-78ad560cd7cc/deploy-status)](https://app.netlify.com/sites/ijsbeer-dev/deploys)
 
@@ -7,7 +7,7 @@
 ![preview](https://github.com/ijsbeerr/ijsbeer-dev/blob/main/public/img/preview.jpg?raw=true)
 
 
-# Credits 👀
+#Credits 👀
 * [Astro](https://astro.build/)
 
 * [Bootstrap](https://getbootstrap.com/)
